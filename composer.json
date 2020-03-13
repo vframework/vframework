@@ -1,0 +1,39 @@
+{
+    "name": "vframework/vframework",
+    "description": "An open-source PHP framework. Incredibly lightweight. Powerful enough.",
+    "keywords": [
+        "framework",
+        "routing",
+        "error handling",
+        "logging"
+    ],
+    "homepage": "https://github.com/vframework/vframework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Duzhenye",
+            "email": "info@vframework.cn",
+            "homepage": "http://vframework.cn"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "ext-gd": "*",
+        "duzhenye/object-storage": "0.6.*",
+        "duzhenye/data-object": "^0.7.1|0.8.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "7.*",
+        "duzhenye/docs-generator": "0.2.*"
+    },
+    "autoload": {
+        "files": [
+            "autoload.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "": "tests/utilities/"
+        }
+    }
+}
